@@ -8,7 +8,11 @@ const API_KEY = "1440f5491a8209d364a356f4beea4365";
 class App extends React.Component {
   state = {
     city: "",
-    country: ""
+    country: "",
+    humidity: undefined,
+    temperature: undefined,
+    description: undefined,
+    error: undefined
   };
 
   // handles input change for City
@@ -42,8 +46,12 @@ class App extends React.Component {
     const data = await api_call.json();
     console.log(data);
     this.setState({
-      city: "",
-      country: ""
+      city: data.name,
+      country: data.sys.country,
+      temperature: data.main.temp,
+      humidity: data.main.humidity,
+      description: data.weather[0].description,
+      error: ""
     });
   };
 
@@ -58,7 +66,14 @@ class App extends React.Component {
           city={this.state.city}
           country={this.state.country}
         />
-        <Weather />
+        <Weather
+          temperature={this.state.temperature}
+          humidity={this.state.humidity}
+          description={this.state.description}
+          city={this.state.city}
+          country={this.state.country}
+          error={this.state.error}
+        />
       </div>
     );
   }
