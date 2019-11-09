@@ -1,24 +1,31 @@
 import React from "react";
+import './Form.css'
 
 const Form = props => {
   return (
-    <form>
-      <input
-        type="text"
-        onChange={props.handleCityChange}
-        // value={props.city}
-        placeholder="City..."
-      />
-      <input
-        type="text"
-        onChange={props.handleCountryChange}
-        // value={props.country}
-        placeholder="Country..."
-      />
-      <button className="btn btn-primary" onClick={props.getWeather}>
-        Get Weather
-      </button>
-    </form>
+    <div id='form_div'>
+      <form>
+        <div id='city_input' className="ui input">
+          <input
+            type="text"
+            onChange={props.handleCityChange}
+            // value={props.city}
+            placeholder="City..."
+          />
+        </div>
+        <div id='country_input' className="ui input">
+          <input
+            type="text"
+            onChange={props.handleCountryChange}
+            // value={props.country}
+            placeholder="Country..."
+          />
+        </div>
+        <button className="ui primary button" onClick={props.getWeather}>
+          Get Weather
+        </button>
+      </form>
+    </div>
   );
 };
 

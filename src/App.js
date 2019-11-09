@@ -70,9 +70,9 @@ class App extends React.Component {
           getWeather={this.getWeather}
           handleCityChange={this.handleCityChange}
           handleCountryChange={this.handleCountryChange}
-        //   city={this.state.city}
-        //   country={this.state.country}
-        />
+          />
+        {/* //   city={this.state.city}
+        //   country={this.state.country} */}
         <Weather
           temperature={this.state.temperature}
           humidity={this.state.humidity}
