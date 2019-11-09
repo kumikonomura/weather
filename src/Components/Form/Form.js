@@ -1,8 +1,6 @@
 import React from "react";
 
 const Form = props => {
-
-
   return (
     <form>
       <input
@@ -17,7 +15,9 @@ const Form = props => {
         // value={props.country}
         placeholder="Country..."
       />
-      <button onClick={props.getWeather}>Get Weather</button>
+      <button className="btn btn-primary" onClick={props.getWeather}>
+        Get Weather
+      </button>
     </form>
   );
 };
