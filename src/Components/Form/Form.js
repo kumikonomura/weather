@@ -8,13 +8,13 @@ const Form = props => {
       <input
         type="text"
         onChange={props.handleCityChange}
-        value={props.city}
+        // value={props.city}
         placeholder="City..."
       />
       <input
         type="text"
         onChange={props.handleCountryChange}
-        value={props.country}
+        // value={props.country}
         placeholder="Country..."
       />
       <button onClick={props.getWeather}>Get Weather</button>

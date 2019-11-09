@@ -45,14 +45,21 @@ class App extends React.Component {
     // converts data to readable format
     const data = await api_call.json();
     console.log(data);
-    this.setState({
-      city: data.name,
-      country: data.sys.country,
-      temperature: data.main.temp,
-      humidity: data.main.humidity,
-      description: data.weather[0].description,
-      error: ""
-    });
+    // city and both country need to be entered in order for info to pop out
+    if (city && country) {
+      this.setState({
+        city: data.name,
+        country: data.sys.country,
+        temperature: data.main.temp,
+        humidity: data.main.humidity,
+        description: data.weather[0].description,
+        error: ""
+      });
+    } else {
+      this.setState({
+        error: "Please input a valid value"
+      });
+    }
   };
 
   render() {
@@ -63,8 +70,8 @@ class App extends React.Component {
           getWeather={this.getWeather}
           handleCityChange={this.handleCityChange}
           handleCountryChange={this.handleCountryChange}
-          city={this.state.city}
-          country={this.state.country}
+        //   city={this.state.city}
+        //   country={this.state.country}
         />
         <Weather
           temperature={this.state.temperature}
