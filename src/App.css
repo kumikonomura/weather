@@ -3,6 +3,10 @@ body {
   background:url('./images/weather.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
+  /* Add the blur effect */
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
 }
 #weather_finder_div {
   padding: 15px;
