@@ -11,10 +11,11 @@
 #city_input {
   margin: 5px;
 }
-#country_input {
+/* #country_input {
   margin-left: 5px;
   margin-right: 8px;
-}
+} */
 #get_weather_button {
   margin-top: 10px;
+  margin-left: 8px;
 }

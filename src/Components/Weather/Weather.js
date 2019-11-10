@@ -6,10 +6,11 @@ const Weather = props => {
     <div id="weather_div">
       {props.city && props.country && (
         <p id='location'>
-          Location:
-          <span>
+          {/* Location: */}
+          {props.city}, {props.country}
+          {/* <span>
             {props.city}, {props.country}
-          </span>
+          </span> */}
         </p>
       )}
       {props.temperature && (

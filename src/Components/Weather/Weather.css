@@ -4,25 +4,26 @@
   margin: 30px;
 }
 p {
-  font-size: 25px;
+  font-size: 20px;
 }
 span {
   margin: 5px;
   color: white !important;
 }
 #location {
-  color: #f16051;
-  /* color: white; */
+  /* color: #f16051; */
+  color: white;
+  font-size: 30px;
 }
 #temperature {
-  color: #f16051;
-  /* color: white; */
+  /* color: #f16051; */
+  color: white;
 }
 #humidity {
-  color: #f16051;
-  /* color: white; */
+  /* color: #f16051; */
+  color: white;
 }
 #condition {
-  color: #f16051;
-  /* color: white; */
+  /* color: #f16051; */
+  color: white;
 }
