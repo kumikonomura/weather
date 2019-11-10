@@ -21,7 +21,7 @@ const Form = props => {
             placeholder="Country..."
           />
         </div>
-        <button className="ui primary button" onClick={props.getWeather}>
+        <button id='get_weather_button' className="ui primary button" onClick={props.getWeather}>
           Get Weather
         </button>
       </form>
