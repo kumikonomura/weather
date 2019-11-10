@@ -8,6 +8,7 @@ const Form = props => {
         <div id='city_input' className="ui input">
           <input
             type="text"
+            id='city_text'
             onChange={props.handleCityChange}
             // value={props.city}
             placeholder="City..."
@@ -16,6 +17,7 @@ const Form = props => {
         <div id='country_input' className="ui input">
           <input
             type="text"
+            id='country_text'
             onChange={props.handleCountryChange}
             // value={props.country}
             placeholder="Country..."
