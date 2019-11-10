@@ -66,23 +66,23 @@ class App extends React.Component {
   render() {
     return (
         <>
-      <div>
+      <div id='weather_finder_div'>
         <Titles />
-        {/* <Form
+        <Form
           getWeather={this.getWeather}
           handleCityChange={this.handleCityChange}
           handleCountryChange={this.handleCountryChange}
-          /> */}
+          />
         {/* //   city={this.state.city}
         //   country={this.state.country} */}
-        {/* <Weather
+        <Weather
           temperature={this.state.temperature}
           humidity={this.state.humidity}
           description={this.state.description}
           city={this.state.city}
           country={this.state.country}
           error={this.state.error}
-        /> */}
+        />
       </div>
       </>
     );

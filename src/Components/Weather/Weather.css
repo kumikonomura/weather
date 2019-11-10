@@ -1,27 +1,28 @@
 #weather_div {
   text-align: center;
   padding: 15px;
+  margin: 30px;
 }
 p {
   font-size: 25px;
 }
 span {
   margin: 5px;
-  color: black !important;
+  color: white !important;
 }
 #location {
-  /* color: #f16051; */
-  color: white;
+  color: #f16051;
+  /* color: white; */
 }
 #temperature {
-  /* color: #f16051; */
-  color: white;
+  color: #f16051;
+  /* color: white; */
 }
 #humidity {
-  /* color: #f16051; */
-  color: white;
+  color: #f16051;
+  /* color: white; */
 }
 #condition {
-  /* color: #f16051; */
-  color: white;
+  color: #f16051;
+  /* color: white; */
 }

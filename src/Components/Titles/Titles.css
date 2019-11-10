@@ -1,18 +1,21 @@
-#title_div {
-  padding: 15px;
-  margin: 10px;
-  margin-right: 10px;
+/* #title_div {
+  padding: 17px;
+  margin: 15px;
   background: #2c3e50;
+} */
+#title_div {
+  margin-bottom: 30px;
+  padding: 5px;
 }
 
 #title {
   text-align: center;
   color: white;
   font-size: 40px;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
 }
 #description {
   text-align: center;
   color: white;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
 }
