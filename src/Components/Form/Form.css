@@ -65,32 +65,3 @@ input[type="text"]:-ms-input-placeholder {
     text-align: center;
   }
 }
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  #form_div {
-    text-align: center;
-  }
-  #city_input {
-    margin: 5px;
-  }
-  #get_weather_button {
-    margin-top: 10px;
-    margin-left: 8px;
-  }
-  /* For Firefox, Chrome, Opera */
-  input[type="text"]::placeholder {
-    text-align: center;
-  }
-
-  /* For Internet Explorer 10-11 */
-  input[type="text"]:-ms-input-placeholder {
-    text-align: center;
-  }
-
-  #city_text {
-    text-align: center;
-  }
-  #country_text {
-    text-align: center;
-  }
-}

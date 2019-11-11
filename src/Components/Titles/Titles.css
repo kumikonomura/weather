@@ -10,7 +10,7 @@
 }
 #title {
   text-align: center;
-  color:white;
+  color: white;
   font-size: 40px;
   font-family: "Bitter", serif;
 }
@@ -19,22 +19,3 @@
   color: white;
   font-family: "Bitter", serif;
 }
-
-/*  IPHONE X Portrait */
-@media (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  #title_div {
-    margin-bottom: 29px;
-  }
-  #title {
-    text-align: center;
-    color:white;
-    font-size: 50px;
-    font-family: "Bitter", serif;
-  }
-  #description {
-    text-align: center;
-    color: white;
-    font-family: "Bitter", serif;
-  }
-}
-
